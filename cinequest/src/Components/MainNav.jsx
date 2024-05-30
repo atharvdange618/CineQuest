@@ -26,7 +26,7 @@ export default function SimpleBottomNavigation() {
     }, [value, navigate]);
 
     return (
-        <Box sx={{ width: '100%', position: 'fixed', bottom: 0, backgroundColor: '#2d313a', zIndex: 100, fontSize: '2vw' }}>
+        <Box sx={{ width: '100%', height:"50px", position: 'fixed', bottom: 0, backgroundColor: '#2d313a', zIndex: 100, fontSize: '1vw' }}>
             <BottomNavigation
                 showLabels
                 value={value}
