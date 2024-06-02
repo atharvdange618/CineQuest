@@ -38,13 +38,24 @@ const Search = () => {
                     style={{ flex: 1 }}
                     className="searchBox"
                     label="Search"
-                    variant="filled"
+                    variant="outlined"
                     onChange={(e) => setSearchText(e.target.value)}
+                    InputProps={{
+                        style: {
+                            color: 'white',
+                        },
+                    }}
+                    InputLabelProps={{
+                        style: {
+                            color: 'white',
+                        },
+                    }}
                 />
+
                 <Button variant='contained' style={{ marginLeft: 10, padding: '10px' }} onClick={fetchSearch}> <SearchIcon /> </Button>
             </div>
 
-            <Tabs value={type} indicatorColor='primary' textColor='primary' onChange={(event, newValue) => {
+            <Tabs value={type} indicatorColor='secondary' textColor='inherit' onChange={(event, newValue) => {
                 setType(newValue)
                 setPage(1);
             }}
